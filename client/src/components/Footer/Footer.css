@@ -1,0 +1,32 @@
+.footer-dark{
+    padding: 10px 0 10px 0;
+    margin-top: 60px;
+    color: rgb(184, 184, 184);
+    background-color: #181818;
+}
+.footer-dark a{
+    color: #FFF;
+}
+
+.footer-dark a:hover{
+    color: rgb(30, 98, 223);
+}
+.footer-div{
+    padding: 25px;
+}
+footer h3{
+    color: rgb(194, 194, 194);
+    border-bottom: 2px solid rgb(194, 194, 194);
+}
+
+.footer-social h3{
+
+}
+
+.footer-contact h3{
+
+}
+
+.footer-navigation h3{
+
+}

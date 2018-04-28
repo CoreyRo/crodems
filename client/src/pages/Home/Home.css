@@ -1,0 +1,26 @@
+#landingDiv{
+    background-color: #000;
+}
+
+#landingName{
+    padding: 30px 0 30px 0;
+}
+
+.lineDiv{
+    border-top: 2px solid #666;
+    margin: 20px auto;
+}
+
+#coreyRo{
+    font-size: 54pt;
+    color: #FFFFFF;
+}
+
+#fullStack{
+    font-size: 24pt;
+    color: #FFFFFF;
+}
+
+.landingNavDiv{
+    padding: 0 0 60px 0;
+}
