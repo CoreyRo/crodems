@@ -1,13 +1,14 @@
 .titleDiv{
-    border-left: 2px solid rgb(0, 89, 255);
-    text-align: left;
-    padding-left: 10px;
+
 }
 
 .titleDiv .title{
-    
+    border-bottom: 2px solid rgb(255, 0, 0);
+    background-color: #181818;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 5px 0 0 10px;
+    margin: 0 0 0 0;
+    font-family: 'Lalezar', cursive;
 }
 
-.titleDiv .subtitle{
-    
-}

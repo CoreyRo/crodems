@@ -5,6 +5,7 @@ export const Image = ({ props, children }) =>
         className={`${props.fluid ? 'img-fluid' : ""}${props.extra ? " " + props.extra : ""}`}
         src={props.src}
         alt={props.alt}
+        width={props.width}
     >
         {children}
     </img>;
