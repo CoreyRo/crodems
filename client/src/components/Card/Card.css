@@ -1,0 +1,33 @@
+.card{
+    background-color: #333;
+}
+
+.card-img-top{
+
+}
+
+.card-body{
+
+}
+
+.card-title{
+
+}
+
+.card-text{
+
+}
+
+.card-btn{
+    padding: 8px 28px 8px 28px;
+    color: rgb(197, 197, 197);
+    text-decoration: none !important;
+    background-color: rgb(224, 0, 0);
+    box-shadow: 1px 1px 1px #000;
+}
+
+.card-btn:hover{
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-decoration: none !important;
+}

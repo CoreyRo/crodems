@@ -9,6 +9,19 @@ i, .i{
   padding-right:8px;
 }
 
+.headDiv{
+  padding: 30px 0 30px 0;
+}
+
+.content{
+  padding-top: 10px;
+}
+
+.headDiv h1{
+  text-align: left;
+}
+
+
 .App {
   text-align: center;
 }

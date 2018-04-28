@@ -17,7 +17,7 @@ class About extends Component {
             <div id='about'>
                 <Nav navLinks={links}/>
                 <Container>
-                    <Row extra='aboutHeadDiv'>
+                    <Row extra='headDiv'>
                         <Col size='md-10'>
                             <Row>
                                 <Col size='md-12'>
@@ -27,7 +27,7 @@ class About extends Component {
                                     }}/>
                                 </Col>
                             </Row>
-                            <Row extra='aboutContent'>
+                            <Row extra='content'>
                                 <Col size='md-4'>
                                     <Image
                                         props={{
