@@ -6,7 +6,7 @@ import './Footer.css'
 const Footer = () => {
 
     return (
-        <footer class="footer footer-dark">
+        <footer className="footer footer-dark">
             <Container>
                 <Row extra='mx-auto'>
                     <Col size='md-4' extra='footer-div footer-social'>
@@ -14,15 +14,15 @@ const Footer = () => {
                             Social Media
                         </h3>
                         <p>
-                            <a href='#' target='_blank'><i class="fab fa-facebook-square"></i>
+                            <a href='#' target='_blank'><i className="fab fa-facebook-square"></i>
                             <span> Facebook</span></a>
                         </p>
                         <p>
-                            <a href='#' target='_blank'><i class="fab fa-twitter-square"></i>
+                            <a href='#' target='_blank'><i className="fab fa-twitter-square"></i>
                             <span> Twitter</span></a>
                         </p>
                         <p>
-                            <a href='#' target='_blank'><i class="fab fa-instagram"></i>
+                            <a href='#' target='_blank'><i className="fab fa-instagram"></i>
                             <span> Instagram</span></a>
                         </p>
                     </Col>
@@ -31,24 +31,24 @@ const Footer = () => {
                             Contact Info
                         </h3>
                         <p>
-                            <a href='#' target='_blank'><i class="fab fa-linkedin"></i>
+                            <a href='#' target='_blank'><i className="fab fa-linkedin"></i>
                             <span> Linkedin</span></a>
                         </p>
                         <p>
-                            <a href='#' target='_blank'><i class="fab fa-github-square"></i>
+                            <a href='#' target='_blank'><i className="fab fa-github-square"></i>
                             <span> Github</span></a>
                         </p>
                         <p>
-                            <a href='#' target='_blank'><i class="fab fa-stack-overflow"></i>
+                            <a href='#' target='_blank'><i className="fab fa-stack-overflow"></i>
                             <span> Stack Overflow</span></a>
                         </p>
                         <p>
-                            <i class="fas fa-phone-square"></i>
+                            <i className="fas fa-phone-square"></i>
                             <span> 555-555-5555</span>
                         </p>
                         <p>
                             <a href='mailto:coreyrodems@gmail.com'>
-                                <i class="fas fa-envelope-square"></i>
+                                <i className="fas fa-envelope-square"></i>
                                 <span> coreyrodems@gmail.com</span>
                             </a>
                         </p>
@@ -60,28 +60,28 @@ const Footer = () => {
                         </h3>
                         <p>
                             <Link to='/'>
-                                <i class="fas fa-home"></i>
+                                <i className="fas fa-home"></i>
                                {` Home`}</Link>
                         </p>
                         <p>
                             <Link to='/about'>
-                                <i class="fas fa-info-circle"></i>
+                                <i className="fas fa-info-circle"></i>
                                 {` About`}</Link>
                         </p>
                         <p>
                             <Link to='/projects'>
-                                <i class="fas fa-folder-open"></i>
+                                <i className="fas fa-folder-open"></i>
                                {` Projects`}</Link>
                         </p>
                         <p>
                             <Link to='/contact'>
-                                <i class="fas fa-envelope"></i>
+                                <i className="fas fa-envelope"></i>
                                 {` Contact`}</Link>
                         </p>
                     </Col>
 
                 </Row>
-                <span class="text-muted">Copyright &copy; 2018 Corey Rodems</span>
+                <span className="text-muted">Copyright &copy; 2018 Corey Rodems</span>
             </Container>
         </footer>
     )

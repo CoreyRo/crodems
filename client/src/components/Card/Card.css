@@ -1,29 +1,33 @@
 .card{
     background-color: #333;
+    margin-bottom: 20px;
+    border-radius: unset;
 }
 
 .card-img-top{
-
+    border-radius: unset;
 }
 
 .card-body{
-
+    border-radius: unset;
 }
 
 .card-title{
-
+    border-radius: unset;
 }
 
 .card-text{
-
+    border-radius: unset;
 }
 
 .card-btn{
     padding: 8px 28px 8px 28px;
     color: rgb(197, 197, 197);
     text-decoration: none !important;
-    background-color: rgb(224, 0, 0);
+    background-color: rgb(206, 0, 0);
     box-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+    margin: 4px;
 }
 
 .card-btn:hover{

@@ -18,7 +18,7 @@ class About extends Component {
                 <Nav navLinks={links}/>
                 <Container>
                     <Row extra='headDiv'>
-                        <Col size='md-10'>
+                        <Col size='md-9'>
                             <Row>
                                 <Col size='md-12'>
                                     <Titles
@@ -97,31 +97,21 @@ class About extends Component {
                             </Row>
                         </Col>
 
-                        <Col size='md-2' extra='infoPanel'>
-                            <Titles
-                                props={{
-                                title: "Info"
-                            }}/>
-                            <Info 
-                                data={
-                                    [
-                                        {
-                                            fluid: true,
-                                            src: 'http://via.placeholder.com/150x150',
-                                            alt: 'placerholder1',
-                                            extra: "infoImg",
-                                            title: 'Placeholder 1'
-                                        },
-                                        {
-                                            fluid: true,
-                                            src: 'http://via.placeholder.com/150x150',
-                                            alt: 'placerholder2',
-                                            extra: "infoImg",
-                                            title: 'Placeholder 2'
-                                        },
-                                    ]
-                                }
-                            />
+                        <Col size='md-3' extra='infoPanel'>
+                            <Row>
+                                <Col size='md-12'>
+                                    <Titles
+                                        props={{
+                                        title: "Recent Projects"
+                                    }}/>
+                                </Col>
+                            </Row>
+                                <Info />
+                            <Row>
+                                <Col size='md-12'>
+                                    Hello World
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Container>

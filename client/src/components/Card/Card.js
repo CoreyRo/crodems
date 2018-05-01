@@ -7,12 +7,12 @@ const Card = ({projects}) => {
     return (
         projects ? projects.map(function(project, i){
             return(
-                <Col size='md-4' key={i}>
+                <Col size='md-4' key={`key-${i}`}>
                     <div className="card">
                         <Image
                             props={{
                             fluid: 1,
-                            src: 'http://via.placeholder.com/100x100',
+                            src: project.imgsrc,
                             alt: 'Card image cap',
                             extra: 'card-img-top'
                         }}/>
@@ -21,7 +21,7 @@ const Card = ({projects}) => {
                             <p className="card-text">{project.text}</p>
                             {project.link ? project.link.map(function(link, i){
                                 return(
-                                    <a href={link.href} className="card-btn">{link.name}</a>
+                                    <a href={link.link} className="card-btn" key={`a-${i}`} target="_blank">{link.name}</a>
                                 )
                             })
                             :

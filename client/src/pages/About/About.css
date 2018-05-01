@@ -8,19 +8,24 @@
 
 .infoPanel{
     background-color: #444;
+    max-height: 100%;
     padding: 0 !important;
 }
+
 
 @media screen and (max-width: 992px)  {
     .about-list span{
         font-size: 10pt;
         display: block;
     }    
+
+
 }
 
 @media screen and (max-width: 768px)  {
     .about-list span{
         font-size: 8pt;
         display: block;
-    }    
+    } 
+
 }
