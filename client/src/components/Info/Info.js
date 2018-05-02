@@ -11,7 +11,7 @@ class Info extends Component {
 
     componentDidMount() {
         axios
-            .get('/api/projects/3')
+            .get('/api/projects/2')
             .then((res => this.setState({projects: res.data})))
             .catch((err => console.log("err", err)))
     }

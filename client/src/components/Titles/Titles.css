@@ -1,5 +1,5 @@
 .titleDiv{
-
+    width: 100% !important;
 }
 
 .titleDiv .title{
@@ -10,5 +10,6 @@
     padding: 5px 0 0 10px;
     margin: 0 0 0 0;
     font-family: 'Lalezar', cursive;
+    width: 100% !important;
 }
 

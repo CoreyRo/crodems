@@ -25,7 +25,14 @@ class Projects extends Component {
 
         return (
 
-            <div>
+            <div
+                style={{
+                backgroundImage: 'url("../public/imgs/bg2.jpg")',
+                backgroundSize: "cover",
+                position: "relative",
+                width: "100%"
+            }}
+                className='animated fadeIn'>
                 <Nav navLinks={links}/>
                 <Container>
 

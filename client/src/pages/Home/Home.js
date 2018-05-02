@@ -4,6 +4,7 @@ import {Container} from '../../components/Grid'
 import {Row} from '../../components/Grid'
 import ButtonGrp from '../../components/ButtonGrp'
 import './Home.css'
+import { Z_FIXED } from 'zlib';
 
 class Home extends Component {
     state={
@@ -16,7 +17,16 @@ class Home extends Component {
 
     render(){
         return(
-			<div id='landingDiv'>
+			<div className='animated fadeIn'
+				id='landingDiv'
+				style={{
+					backgroundImage: 'url("../public/imgs/bg2.jpg")',
+					backgroundSize: "cover",
+					position: "absolute",
+					width: "100%"
+				}}
+			
+			>
 			<Container fluid={1}>
 				<Row>
 					<Col size='md-12' extra='mx-auto'>
@@ -65,11 +75,19 @@ class Home extends Component {
 					</Col>
 				</Row>
 			</Container>
-			<Row>
+			<Container>
+				<Row>
 				<Col size='md-12' extra='mx-auto'>
-					<img className='img-fluid' src='../public/imgs/responsiveclean.png' alt='landing_page_img' />
-				</Col>
-			</Row>
+				<h2 id='responsive-h2' style={{
+					
+					marginBottom: '25px'
+				}}>Mobile first, responsive web design.</h2>
+					</Col>
+					<Col size='md-12' extra='mx-auto'>
+						<img className='img-fluid' src='../public/imgs/responsiveclean2.png' alt='landing_page_img' width='900' />
+					</Col>
+				</Row>
+			</Container>
 			</div>
         )
     }

@@ -14,18 +14,26 @@ class About extends Component {
 
     render() {
         return (
-            <div id='about'>
+            <div
+                id='about'
+                className='animated fadeIn'
+                style={{
+                backgroundImage: 'url("../public/imgs/bg2.jpg")',
+                backgroundSize: "cover",
+                position: "absolute",
+                width: "100%"
+            }}>
                 <Nav navLinks={links}/>
                 <Container>
                     <Row extra='headDiv'>
-                        <Col size='md-9'>
+                        <Col size='md-8' extra='about-section'>
                             <Row>
-                                <Col size='md-12'>
-                                    <Titles
-                                        props={{
-                                        title: 'About me'
-                                    }}/>
-                                </Col>
+
+                                <Titles
+                                    props={{
+                                    title: 'About me'
+                                }}/>
+
                             </Row>
                             <Row extra='content'>
                                 <Col size='md-4'>
@@ -96,21 +104,19 @@ class About extends Component {
                                 </Col>
                             </Row>
                         </Col>
-
+                        <Col size='md-1'/>
                         <Col size='md-3' extra='infoPanel'>
                             <Row>
-                                <Col size='md-12'>
-                                    <Titles
-                                        props={{
-                                        title: "Recent Projects"
-                                    }}/>
-                                </Col>
+
+                                <Titles
+                                    props={{
+                                    title: "Recent Projects"
+                                }}/>
+
                             </Row>
-                                <Info />
+                            <Info/>
                             <Row>
-                                <Col size='md-12'>
-                                    Hello World
-                                </Col>
+                                <Col size='md-12'></Col>
                             </Row>
                         </Col>
                     </Row>
