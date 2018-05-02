@@ -8,9 +8,9 @@ const Skills = () =>{
             <hr/>
             <h2 className=''>Competent in...
             </h2>
-            <br/>
-            <div className='row'>
-                <div className='col-sm-4'>
+
+            <div className='row mx-auto text-center bgcoverskills'>
+                <div className='col-sm-4 mx-auto text-center'>
                     <ul>
                         <li>
                             <span id='html5'><i className="fab fa-html5"></i></span>
@@ -27,7 +27,7 @@ const Skills = () =>{
                     </ul>
                 </div>
 
-                <div className='col-sm-4'>
+                <div className='col-sm-4 mx-auto text-center'>
                     <ul>
                         <li>
                             <span>
@@ -55,7 +55,7 @@ const Skills = () =>{
                         </li>
                     </ul>
                 </div>
-                <div className='col-sm-4'>
+                <div className='col-sm-4 mx-auto text-center'>
                     <ul>
                         <li>
                             <span id='wordpress'>
@@ -78,9 +78,7 @@ const Skills = () =>{
                     </ul>
                 </div>
             </div>
-
             ...and other full stack frameworks and languages.
-            <hr/>
         </div>
     )
 }

@@ -32,11 +32,11 @@ class Projects extends Component {
                 position: "relative",
                 width: "100%"
             }}
-                className='animated fadeIn'>
+                className=''>
                 <Nav navLinks={links}/>
                 <Container>
 
-                    <Row extra='headDiv'>
+                    <Row extra='headDiv animated fadeIn'>
                         <Col size='md-12'>
                             <Row>
                                 <Col size='md-12'>

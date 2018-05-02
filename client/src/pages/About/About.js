@@ -16,7 +16,7 @@ class About extends Component {
         return (
             <div
                 id='about'
-                className='animated fadeIn'
+                className=''
                 style={{
                 backgroundImage: 'url("../public/imgs/bg2.jpg")',
                 backgroundSize: "cover",
@@ -25,7 +25,7 @@ class About extends Component {
             }}>
                 <Nav navLinks={links}/>
                 <Container>
-                    <Row extra='headDiv'>
+                    <Row extra='headDiv animated fadeIn'>
                         <Col size='md-8' extra='about-section'>
                             <Row>
 
