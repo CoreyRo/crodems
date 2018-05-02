@@ -3,25 +3,27 @@ nav i{
 }
 
 .navbar-dark{
-    background: #540000; /* Old Browsers */
-    background: -webkit-linear-gradient(top,#540000,#1a0000); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top,#540000,#1a0000); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top,#540000,#1a0000); /*Fx 3.6-15*/
-    background: linear-gradient(to bottom, #540000, #1a0000); /*Standard*/
+background: #910000; /* Old Browsers */
+background: -webkit-linear-gradient(top,#910000,#840022); /*Safari 5.1-6*/
+background: -o-linear-gradient(top,#910000,#840022); /*Opera 11.1-12*/
+background: -moz-linear-gradient(top,#910000,#840022); /*Fx 3.6-15*/
+background: linear-gradient(to bottom, #910000, #840022); /*Standard*/
 }
 
 .bg-dark{
-    background: #540000; /* Old Browsers */
-    background: -webkit-linear-gradient(top,#540000,#1a0000); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top,#540000,#1a0000); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top,#540000,#1a0000); /*Fx 3.6-15*/
-    background: linear-gradient(to bottom, #540000, #1a0000); /*Standard*/
+background: #910000; /* Old Browsers */
+background: -webkit-linear-gradient(top,#910000,#840022); /*Safari 5.1-6*/
+background: -o-linear-gradient(top,#910000,#840022); /*Opera 11.1-12*/
+background: -moz-linear-gradient(top,#910000,#840022); /*Fx 3.6-15*/
+background: linear-gradient(to bottom, #910000, #840022); /*Standard*/
+}
+.nav-link{
+    color: rgb(255, 255, 255) !important;
 }
 
 .active{
     font-weight: bold;
-    border-bottom: 2px solid #FFFFFF;
-    padding-top: .5rem;
-    padding-bottom: .1rem;
+    border: 2px solid rgb(255, 222, 73);
+    color: rgb(255, 222, 73) !important;
 
 }
