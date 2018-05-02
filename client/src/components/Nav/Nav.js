@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink, IndexLink} from 'react-router-dom'
 import {Col} from '../Grid'
 import {Container} from '../Grid'
 import {Row} from '../Grid'
@@ -11,36 +11,52 @@ class Nav extends Component {
     componentDidMount() {}
 
     render() {
+
         return (
             <nav className="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
-            <Container>
-                <a className="navbar-brand" href="/">CoreyRodems.com</a>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navigation"
-                    aria-controls="navigation"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+                <Container>
+                    <a className="navbar-brand" href="/">{`Corey`}
+                        <i className="fas fa-code"></i>{`Rodems`}</a>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navigation"
+                        aria-controls="navigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
 
-                <div className="collapse navbar-collapse" id="navigation">
+                    <div className="collapse navbar-collapse" id="navigation">
 
-                    <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
-                        {this.props.navLinks.map(function (link, i) {
-                                return (
-                                    <li className='nav-item' key={i}>
-                                        <Link className='nav-link' to={link.link}>
-                                            {link.icon ? <i className={`fas ${link.icon}`}></i> : ""}
-                                            {` ${link.name}`}
-                                        </Link>
-                                    </li>
-                                )
-                            })}
-                    </ul>
-                </div>
+                        <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li className='nav-item'>
+                                <NavLink  ref={`Home`} className={`nav-link`} activeClassName="active" exact to={`/`}>
+                                    <i className={`fas fa-home`}></i>
+                                    {`Home`}
+                                </NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                <NavLink ref={`About`} className={`nav-link`} activeClassName="active" to={`/about`}>
+                                    <i className={`fas fa-info-circle`}></i>
+                                    {`About`}
+                                </NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                <NavLink ref={`Projects`} className={`nav-link`} activeClassName="active" to={`/projects`}>
+                                    <i className={`fas fa-folder-open`}></i>
+                                    {`Projects`}
+                                </NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                <NavLink ref={`Contact`} className={`nav-link`} activeClassName="active" to={`/contact`}>
+                                    <i className={`fas fa-envelope`}></i>
+                                    {`Contact`}
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
                 </Container>
             </nav>
         )

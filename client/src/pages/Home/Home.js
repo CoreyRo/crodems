@@ -1,94 +1,110 @@
 import React, {Component} from 'react'
-import {Col} from '../../components/Grid'
-import {Container} from '../../components/Grid'
-import {Row} from '../../components/Grid'
-import ButtonGrp from '../../components/ButtonGrp'
+import Nav, {links} from '../../components/Nav'
+import {Col, Container, Row} from '../../components/Grid'
+import Skills from '../../components/Skills'
+import Footer from '../../components/Footer'
 import './Home.css'
-import { Z_FIXED } from 'zlib';
+import {Z_FIXED} from 'zlib';
+import { SSL_OP_PKCS1_CHECK_2 } from 'constants';
 
 class Home extends Component {
-    state={
+    state = {}
 
-    }
+    componentDidMount() {}
 
-    componentDidMount(){
-
-    }
-
-    render(){
-        return(
-			<div className='animated fadeIn'
-				id='landingDiv'
-				style={{
-					backgroundImage: 'url("../public/imgs/bg2.jpg")',
-					backgroundSize: "cover",
-					position: "absolute",
-					width: "100%"
-				}}
-			
-			>
-			<Container fluid={1}>
-				<Row>
-					<Col size='md-12' extra='mx-auto'>
-						<div id='landingName'>
+    render() {
+        return (
+            <div className='animated fadeIn' id='landingDiv'>
+                <Nav navLinks={links}/>
+                <Container fluid={1}>
+                    <Row>
+                        <Col size='md-12' extra='mx-auto'>
+                            <div id='landingName'>
+                                <Row>
+                                    <Col size='md-12'>
+                                        <h1 id='coreyRo'>Corey Rodems</h1>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col size='md-5' extra='lineDiv'></Col>
+                                    <Col size='md-2'>
+                                        <h2 id='fullStack'>Fullstack Developer</h2>
+                                    </Col>
+                                    <Col size='md-5' extra='lineDiv'></Col>
+                                </Row>
+                            </div>
+                        </Col>
+                    </Row>
+					<Row extra='mx-auto text-center'>
+						<Col size='md-12'>
 							<Row>
-								<Col size='md-12'>
-									<h1 id='coreyRo'>Corey Rodems</h1>
-								</Col>
+
 							</Row>
-							<Row>
-								<Col size='md-5' extra='lineDiv'></Col>
-								<Col size='md-2'>
-									<h2 id='fullStack'>Fullstack Developer</h2>
-								</Col>
-								<Col size='md-5' extra='lineDiv'></Col>
-							</Row>
-						</div>	
-					</Col>
-				</Row>
-				<Row>
-					<Col size='md-12' extra='mx-auto text-center landingNavDiv'>
-					<ButtonGrp 
-						buttons={
-							[
-								{
-									name: 'About',
-									icon: 'fa-info-circle',
-									class: 'landingNavBtn',
-									link: '/about'
-								},
-								{
-									name: 'Projects',
-									icon: 'fa-folder-open',
-									class: 'landingNavBtn',
-									link: '/projects'
-								},
-								{
-									name: 'Contact',
-									icon: 'fa-envelope',
-									class: 'landingNavBtn',
-									link: '/contact'
-								},
-							]
-						}
-					/>
-					</Col>
-				</Row>
-			</Container>
-			<Container>
-				<Row>
-				<Col size='md-12' extra='mx-auto'>
-				<h2 id='responsive-h2' style={{
-					
-					marginBottom: '25px'
-				}}>Mobile first, responsive web design.</h2>
-					</Col>
-					<Col size='md-12' extra='mx-auto'>
-						<img className='img-fluid' src='../public/imgs/responsiveclean2.png' alt='landing_page_img' width='900' />
-					</Col>
-				</Row>
-			</Container>
-			</div>
+						</Col>
+					</Row>
+                </Container>
+                <div
+                    style={{
+						backgroundImage: 'url("../public/imgs/bg2.jpg")',
+						backgroundSize: "cover",
+						position: "relative",
+						width: "100%",
+					}}
+					className='mid-banner'
+				
+				>
+
+                    <Container>
+						<Row>
+							<Col size='md-7' extra='intro'>
+								<h3 className='mx-auto responsive-h2'>
+									<span className='code'>{`Full `}<i className="fas fa-code"></i>{` Stack Developer`}</span> {`with a background in management and quality control.`}
+								</h3>
+								<h3 className='mx-auto responsive-h2'>
+									<span className='grad'>{`Recently `}<i className="fas fa-graduation-cap"></i>{` completed`}</span> {`the UC Irvine Fullstack Development Program.`}
+								</h3>
+								<h3 className='mx-auto responsive-h2'>
+									<span className='m-1st'>{`Designing `}<i className="fas fa-mobile-alt"></i>{` Mobile first`}</span>{`, responsive web applications.`}
+								</h3>
+							</Col>
+							<Col size='md-5' extra='mx-auto'>
+                                <img
+                                    className='img-fluid'
+                                    src='../public/imgs/responsiveclean.png'
+                                    alt='landing_page_img'
+                                    width='900'/>
+                            </Col>
+
+						</Row>
+                        <Row>
+                            {/* <Col size='md-12' extra='mx-auto'>
+								<Row extra='mx-auto text-center'>
+									<Col size='md-12'>
+										<Row>
+											<h2 className='mx-auto responsive-h2'>
+												<i className="fas fa-code fa-lg"></i>
+												Junior Full Stack Developer with a background in management and quality control.</h2>
+										</Row>
+										<Row>
+											<h2 className='mx-auto responsive-h2'>
+												<i className="fas fa-mobile-alt"></i>
+												Mobile first, responsive web design.</h2>
+										</Row>
+										<Row>
+											<h2 className='mx-auto responsive-h2'>
+												<i className="fas fa-graduation-cap fa-lg"></i>
+												Recently completed the UC Irvine Fullstack Development Program.</h2>
+										</Row>
+									</Col>
+								</Row>
+                            </Col> */}
+
+                        </Row>
+                    </Container>
+                </div>
+				<Skills />
+				<Footer />
+            </div>
         )
     }
 }

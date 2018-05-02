@@ -1,7 +1,27 @@
+nav i{
+    padding: 0 2px 0 2px;
+}
+
 .navbar-dark{
-    background-color: #000 !important;
+    background: #540000; /* Old Browsers */
+    background: -webkit-linear-gradient(top,#540000,#1a0000); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,#540000,#1a0000); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,#540000,#1a0000); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #540000, #1a0000); /*Standard*/
 }
 
 .bg-dark{
-    background-color: #000 !important;
+    background: #540000; /* Old Browsers */
+    background: -webkit-linear-gradient(top,#540000,#1a0000); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,#540000,#1a0000); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,#540000,#1a0000); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #540000, #1a0000); /*Standard*/
+}
+
+.active{
+    font-weight: bold;
+    border-bottom: 2px solid #FFFFFF;
+    padding-top: .5rem;
+    padding-bottom: .1rem;
+
 }
