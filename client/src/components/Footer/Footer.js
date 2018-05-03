@@ -14,15 +14,15 @@ const Footer = () => {
                             Social Media
                         </h3>
                         <p>
-                            <a href='#' target='_blank'><i className="fab fa-facebook-square"></i>
+                            <a href='https://www.facebook.com/codeguycro' target='_blank'><i className="fab fa-facebook-square"></i>
                             <span> Facebook</span></a>
                         </p>
                         <p>
-                            <a href='#' target='_blank'><i className="fab fa-twitter-square"></i>
+                            <a href='https://twitter.com/RodemsCorey' target='_blank'><i className="fab fa-twitter-square"></i>
                             <span> Twitter</span></a>
                         </p>
                         <p>
-                            <a href='#' target='_blank'><i className="fab fa-instagram"></i>
+                            <a href='https://instagram.com/codebbq' target='_blank'><i className="fab fa-instagram"></i>
                             <span> Instagram</span></a>
                         </p>
                     </Col>
@@ -31,22 +31,18 @@ const Footer = () => {
                             Contact Info
                         </h3>
                         <p>
-                            <a href='#' target='_blank'><i className="fab fa-linkedin"></i>
+                            <a href='https://www.linkedin.com/in/coreyrodems/' target='_blank'><i className="fab fa-linkedin"></i>
                             <span> Linkedin</span></a>
                         </p>
                         <p>
-                            <a href='#' target='_blank'><i className="fab fa-github-square"></i>
+                            <a href='https://www.github.com/coreyro' target='_blank'><i className="fab fa-github-square"></i>
                             <span> Github</span></a>
                         </p>
                         <p>
-                            <a href='#' target='_blank'><i className="fab fa-stack-overflow"></i>
+                            <a href='https://stackoverflow.com/users/8233751/cro' target='_blank'><i className="fab fa-stack-overflow"></i>
                             <span> Stack Overflow</span></a>
                         </p>
-                        <p>
-                            <i className="fas fa-phone-square"></i>
-                            <span> 555-555-5555</span>
-                        </p>
-                        <p>
+                          <p>
                             <a href='mailto:coreyrodems@gmail.com'>
                                 <i className="fas fa-envelope-square"></i>
                                 <span> coreyrodems@gmail.com</span>
@@ -81,7 +77,7 @@ const Footer = () => {
                     </Col>
 
                 </Row>
-                <span className="text-muted">Copyright &copy; 2018 Corey Rodems</span>
+                <small className="text-muted">Copyright &copy; 2018 Corey Rodems</small>
             </Container>
         </footer>
     )

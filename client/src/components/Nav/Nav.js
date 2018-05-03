@@ -32,25 +32,25 @@ class Nav extends Component {
 
                         <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                             <li className='nav-item'>
-                                <NavLink  ref={`Home`} className={`nav-link`} activeClassName="active" exact to={`/`}>
+                                <NavLink className={`nav-link`} activeClassName="active" exact to={`/`}>
                                     <i className={`fas fa-home`}></i>
                                     {`Home`}
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink ref={`About`} className={`nav-link`} activeClassName="active" to={`/about`}>
+                                <NavLink className={`nav-link`} activeClassName="active" to={`/about`}>
                                     <i className={`fas fa-info-circle`}></i>
                                     {`About`}
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink ref={`Projects`} className={`nav-link`} activeClassName="active" to={`/projects`}>
+                                <NavLink className={`nav-link`} activeClassName="active" to={`/projects`}>
                                     <i className={`fas fa-folder-open`}></i>
                                     {`Projects`}
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink ref={`Contact`} className={`nav-link`} activeClassName="active" to={`/contact`}>
+                                <NavLink className={`nav-link`} activeClassName="active" to={`/contact`}>
                                     <i className={`fas fa-envelope`}></i>
                                     {`Contact`}
                                 </NavLink>

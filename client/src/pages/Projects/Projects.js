@@ -15,6 +15,7 @@ class Projects extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         axios
             .get('/api/projects/null')
             .then((res => this.setState({projects: res.data})))
@@ -25,14 +26,7 @@ class Projects extends Component {
 
         return (
 
-            <div
-                style={{
-                backgroundImage: 'url("../public/imgs/bg2.jpg")',
-                backgroundSize: "cover",
-                position: "relative",
-                width: "100%"
-            }}
-                className=''>
+            <div className=''>
                 <Nav navLinks={links}/>
                 <Container>
 

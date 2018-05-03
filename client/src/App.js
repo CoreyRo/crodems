@@ -14,7 +14,13 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Router>
-					<div>
+					<div style={{
+                backgroundImage: 'url("../public/imgs/bg2.jpg")',
+				backgroundSize: "cover",
+				backgroundAttachment: 'fixed',
+                position: "relative",
+
+            }}>
 						<Route exact path='/' component={Home}/>
 						<Route exact path='/about' component={About}/>
 						<Route exact path='/projects' component={Projects}/>

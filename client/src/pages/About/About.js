@@ -8,21 +8,19 @@ import Footer from '../../components/Footer'
 import './About.css'
 
 class About extends Component {
-    state = {}
+    state = {
+        
+    }
 
-    componentDidMount() {}
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
 
     render() {
         return (
             <div
                 id='about'
-                className=''
-                style={{
-                backgroundImage: 'url("../public/imgs/bg2.jpg")',
-                backgroundSize: "cover",
-                position: "absolute",
-                width: "100%"
-            }}>
+                className=''>
                 <Nav navLinks={links}/>
                 <Container>
                     <Row extra='headDiv animated fadeIn'>

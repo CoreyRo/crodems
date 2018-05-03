@@ -1,0 +1,87 @@
+#contact-form{
+    background-color: #FFFFFF;
+    padding: 15px 10px 15px 10px;
+    margin: 0px auto 15px auto;
+}
+#contact-form label{
+    text-align: left !important;
+    color: #131313;
+    padding-left: .1rem;
+    font-size: 9pt;
+    color: rgb(0, 60, 255);
+    font-weight: bold;
+    margin: 0 0 0 0;
+
+}
+#form{
+    padding: 10px 0 75px 0;
+}
+.alert{
+    border-radius: unset;
+}
+
+.alert-danger{
+    background-color: #FF0000 !important;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000;
+    border: unset;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.753);
+}
+
+.alert-success{
+    background-color: rgb(0, 206, 62) !important;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000;
+    border: unset;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.753);
+}
+
+.App{
+
+}
+
+#submit-button{
+    padding: .5rem 1rem .5rem 1rem;
+    background-color:rgb(0, 102, 255); 
+    text-align: center !important;
+    border: unset;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+#submit-button-disabled{
+    padding: .5rem 1rem .5rem 1rem;
+    background-color:rgb(181, 207, 247); 
+    text-align: center !important;
+    border: unset;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+#submit-button:hover{
+    background-color:rgb(45, 129, 255); 
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);
+}
+
+.form-control{
+    border-radius: unset;
+    border-bottom: 1px solid rgb(0, 60, 255);
+    padding: 5px 0 5px .1rem;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.form-control:focus{
+    background-color: rgb(252, 245, 146);
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.form-control input:focus{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}

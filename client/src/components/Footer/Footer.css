@@ -1,6 +1,6 @@
 .footer-dark{
     padding: 10px 0 10px 0;
-
+    text-align: left;
     color: rgb(184, 184, 184);
     background: #313131; /* Old Browsers */
     background: -webkit-linear-gradient(top,#313131,#1e1e1e); /*Safari 5.1-6*/

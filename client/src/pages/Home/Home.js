@@ -10,19 +10,16 @@ import {SSL_OP_PKCS1_CHECK_2} from 'constants';
 class Home extends Component {
     state = {}
 
-    componentDidMount() {}
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
 
     render() {
         return (
             <div
                 className=''
                 id='landingDiv'
-                style={{
-                backgroundImage: 'url("../public/imgs/bg2.jpg")',
-                backgroundSize: "cover",
-                position: "relative",
-                width: "100%"
-            }}>
+                >
                 <Nav navLinks={links}/>
                 <div className=' animated fadeIn'>
                     <Container fluid={1}>
