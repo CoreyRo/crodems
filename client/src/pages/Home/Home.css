@@ -4,28 +4,47 @@
 }
 
 #landingName{
-    padding: 50px 0 50px 0;
+
 }
 
 .mid-banner{
     padding: 10px 0 10px 0;
-
 }
 
 .bgcover{
+    /* background-color: rgb(37, 37, 37);
+    text-align: center !important;
+    width: auto;
+    height: 300px;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px #000; */
+    margin: 8px;
     background-color: rgba(0, 0, 0, 0.904);
-    padding: 35px 25px 0px 25px;
+    text-align: center !important;
+    height: auto;
+    padding: 15px 25px 15px 25px;
     box-shadow: 4px 4px 4px #000;
+    height: 15rem;
+}
+
+.home-div{
+    padding-top: 12%;
+    padding-bottom: 12%;
 }
 
 .responsive-h2{
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     font-family: 'Lalezar', cursive;
     text-shadow: 2px 2px 2px #000;
-    padding-bottom: 25px;
 }
 
 .lineDiv{
-    border-top: 2px solid #666;
+    border-top: 1px solid #FFF;
     margin: 20px auto;
 }
 
@@ -38,10 +57,31 @@
     color: #FFFFFF;
 }
 
+.ghub{
+    color: #FFFFFF;
+}
+
+.lkin{
+    color: #FFFFFF;
+}
+
+.emailme{
+    color: #FFFFFF;
+}
+
 .landingNavDiv{
     padding: 0 0 60px 0;
 }
 
+.intro-link{
+    transition: all 800ms ease;
+}
+
+.intro-link:hover {
+    background: rgba(36, 36, 36, 0.308);
+    transition: all 300ms ease;
+
+}
 
 .intro i{
     padding: 0 2px 0 2px !important;
@@ -57,4 +97,16 @@
 
 .intro .fa-mobile-alt, .m-1st {
     color: rgb(51, 255, 0) !important;
+}
+
+@media screen and (max-width: 768px)  {
+    #landingName{
+
+    }
+    #coreyRo{
+        font-size: 38pt;
+    }
+    .lineDiv{
+        display: none;
+    }
 }

@@ -3,17 +3,31 @@ import {NavLink, IndexLink} from 'react-router-dom'
 import {Col} from '../Grid'
 import {Container} from '../Grid'
 import {Row} from '../Grid'
+
 import "./Nav.css"
 
 class Nav extends Component {
-    state = {}
-
+    state = {
+        navPos: 0,
+        navClass: this.props.extras
+    }
     componentDidMount() {}
+
+    componentDidUpdate() {
+        let pProps = this.props.extras
+        let sState = this.state.navClass
+        //if props are not the same as state, update the state
+        if (pProps !== sState) {
+            this.setState({
+                navClass: this.props.extras
+            }, () => console.log("update props", this.state))
+        }
+    }
 
     render() {
 
         return (
-            <nav className="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className={`sticky-top navbar navbar-expand-lg ${this.state.navClass}`}>
                 <Container>
                     <a className="navbar-brand" href="/">{`Corey`}
                         <i className="fas fa-code"></i>{`Rodems`}</a>

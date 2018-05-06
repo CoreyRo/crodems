@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import axios from 'axios'
-import Nav, {links} from '../../components/Nav'
 import {Col, Container, Row, Image} from '../../components/Grid'
 import Info from '../../components/Info'
 import Card from '../../components/Card'
@@ -27,7 +26,6 @@ class Projects extends Component {
         return (
 
             <div className=''>
-                <Nav navLinks={links}/>
                 <Container>
 
                     <Row extra='headDiv animated fadeIn'>
@@ -46,7 +44,6 @@ class Projects extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <Footer/>
             </div>
         )
     }

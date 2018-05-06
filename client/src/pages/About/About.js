@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Nav, {links} from '../../components/Nav'
 import {Col, Container, Row, Image} from '../../components/Grid'
 import Info from '../../components/Info'
 import Titles from '../../components/Titles'
@@ -21,7 +20,6 @@ class About extends Component {
             <div
                 id='about'
                 className=''>
-                <Nav navLinks={links}/>
                 <Container>
                     <Row extra='headDiv animated fadeIn'>
                         <Col size='md-8' extra='about-section'>
@@ -119,7 +117,6 @@ class About extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <Footer/>
             </div>
         )
     }

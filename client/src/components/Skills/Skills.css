@@ -1,32 +1,26 @@
 #skills{
-    padding: 50px 0 50px 0;
+    margin: 0px auto 0px auto;
+
 }
 
-.outerborder{
-    padding: 15px 10px 15px 10px;
-    margin-bottom: 10px;
-    border-left: 4px solid rgb(255, 0, 64);
-    border-right: 4px solid rgb(255, 0, 64);
-}
-
-.innerborder{
-    background-color: rgba(0, 0, 0, 0.904);
-    border-left: 4px solid rgb(253, 208, 59);
-    border-right: 4px solid rgb(253, 208, 59);
-}
 
 .bgcoverskills{
     background-color: rgba(0, 0, 0, 0.904);
-    padding: 20px 25px 25px 25px;
-    margin-bottom: 20px;
+    text-align: center !important;
+    height: auto;
+    padding: 15px 25px 15px 25px;
     box-shadow: 4px 4px 4px #000;
+    
 }
 
 
-#skills span{
+#skills p{
     font-weight: bold;
-    font-size: 14pt;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    font-size: 18pt;
 }
+
 
 #skills li, ul{
     list-style: none;
@@ -35,7 +29,7 @@
 
 #skills ul{
     list-style: none;
-    margin: 10px 0px 0px -50px !important;
+
 }
 
 #skills h2{

@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {Container, Row, Col, Image} from '../../components/Grid'
-import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import Form from '../../components/Form'
 import Titles from '../../components/Titles'
@@ -18,7 +17,6 @@ class Contact extends Component {
 
         return (
             <div ref='top'>
-                <Nav/>
                 <Container>
                     <div className='animated fadeIn'>
                         <Row extra='headDiv text-center'>
@@ -38,7 +36,6 @@ class Contact extends Component {
                         </Row>
                     </div>
                 </Container>
-                <Footer/>
             </div>
         )
     }
