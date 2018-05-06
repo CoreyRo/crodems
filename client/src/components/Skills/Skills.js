@@ -78,7 +78,9 @@ const Skills = () =>{
                     </div>
                 </div>
             </div>
+            <h4>
             ...and other full stack frameworks and languages.
+            </h4>
         </div>
     )
 }

@@ -10,11 +10,11 @@ import Footer from "./components/Footer"
 
 class App extends Component {
 
-	state={
-		extras: ""
-	}
+    state = {
+        extras: ""
+    }
 
-	//listen for scroll to transition navbar classes
+    //listen for scroll to transition navbar classes
     componentDidMount() {
         window.addEventListener('scroll', this.checkScroll);
     }
@@ -22,37 +22,32 @@ class App extends Component {
         window.removeEventListener('scroll', this.checkScroll);
     }
 
-	//checks to see if the the navbar is about to hit content
+    //checks to see if the the navbar is about to hit content
     checkScroll = (e) => {
-		console.log(window.scrollY)
-		if(window.scrollY >= 50){
-			this.setState({extras: "navbar-dark bg-dark"})
-		}
-		else{
-			this.setState({extras: "navbar-dark bg-trans"})
-		}
-	}
-	
-
-
+        if (window.scrollY >= 50) {
+            this.setState({extras: "navbar-dark bg-dark"})
+        } else {
+            this.setState({extras: "navbar-dark bg-trans"})
+        }
+    }
 
     render() {
         return (
             <div className="App" ref='App'>
                 <Router>
-					<div							
-						style={{
-							backgroundImage: 'url("../public/imgs/bg2.jpg")',
-							backgroundSize: "cover",
-							backgroundAttachment: 'fixed',
-							position: "relative"
-						}}>
-						<Nav ref='nav' extras={this.state.extras} />
+                    <div
+                        style={{
+                        backgroundImage: 'url("../public/imgs/bg2.jpg")',
+                        backgroundSize: "cover",
+                        backgroundAttachment: 'fixed',
+                        position: "relative"
+                    }}>
+                        <Nav ref='nav' extras={this.state.extras}/>
                         <Route exact path='/' component={Home}/>
                         <Route exact path='/about' component={About}/>
                         <Route exact path='/projects' component={Projects}/>
                         <Route exact path='/contact' component={Contact}/>
-						<Footer />
+                        <Footer/>
                     </div>
                 </Router>
             </div>

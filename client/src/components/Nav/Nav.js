@@ -18,9 +18,7 @@ class Nav extends Component {
         let sState = this.state.navClass
         //if props are not the same as state, update the state
         if (pProps !== sState) {
-            this.setState({
-                navClass: this.props.extras
-            }, () => console.log("update props", this.state))
+            this.setState({navClass: this.props.extras})
         }
     }
 
