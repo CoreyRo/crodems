@@ -4,7 +4,9 @@
 Corey Rodems
 
 ## Description
+MERN stack web app
 2nd iteration of coreyrodems.com - a portfilio site for myself 
+
 
 
 ---
