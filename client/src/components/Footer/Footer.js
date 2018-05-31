@@ -14,15 +14,11 @@ const Footer = () => {
                             Social Media
                         </h3>
                         <p>
-                            <a href='https://www.facebook.com/codeguycro' target='_blank'><i className="fab fa-facebook-square"></i>
-                            <span> Facebook</span></a>
-                        </p>
-                        <p>
                             <a href='https://twitter.com/RodemsCorey' target='_blank'><i className="fab fa-twitter-square"></i>
                             <span> Twitter</span></a>
                         </p>
                         <p>
-                            <a href='https://instagram.com/codebbq' target='_blank'><i className="fab fa-instagram"></i>
+                            <a href='https://www.instagram.com/coreyro42/' target='_blank'><i className="fab fa-instagram"></i>
                             <span> Instagram</span></a>
                         </p>
                     </Col>
